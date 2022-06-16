@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="home" id="home">
+        <div class="navbar">
+            <ul class="navbarleft">
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#reservation">RESERVATION</a></li>
+            </ul>
+            <ul class="navbarright">
+                <li><a href="#menu">MENU</a></li>
+                <li><a href="#footer">CONTACT</a></li>
+                <li><a href="#" id="login" onclick="startLogin()">LOGIN</a></li>
+            </ul>
+        </div>
+        <div class="headerImage">
+            <img src="./assets/img/Food-HD-Wallpapers-04864.jpg" alt="">
+            <img src="assets/img/ima-foo-review-paris.webp" alt="">
+            <img src="assets/img/ima-project-cafe_mel_r_supplied_credit-Jovita-Gotama_3_1600x900.jpg" alt="">
+        </div>
+        <div class="leftArrow" onclick="onLeftArrowClick()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm.707-10.293a1 1 0 00-1.414-1.414l-3 3a1 1 0 000 1.414l3 3a1 1 0 001.414-1.414L9.414 11H13a1 1 0 100-2H9.414l1.293-1.293z"
+                    clip-rule="evenodd" />
+            </svg>
+        </div>
+        <div class="rightArrow" onclick="onRightArrowClick()">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                <path fill-rule="evenodd"
+                    d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-8.707l-3-3a1 1 0 00-1.414 1.414L10.586 9H7a1 1 0 100 2h3.586l-1.293 1.293a1 1 0 101.414 1.414l3-3a1 1 0 000-1.414z"
+                    clip-rule="evenodd" />
+            </svg>
+        </div>
+        <div class="logoContainer">
+            <img src="./assets/img/th-2230128278.jpg" alt="logo" class="logo">
+        </div>
+        <div class="temp"></div>
+        <!-- <div class="authContainer login">
+            <div class="authHead">LOG IN</div>
+            <input type="text" class="email" placeholder="Email">
+            <input type="text" class="password" placeholder="Password">
+            <div class="loginContainer">
+                <button class="loginButton" onclick="login()">LOG IN</button>
+                <a href="#" class="authLink">New User? Sign Up instead</a>
+            </div>
+        </div> -->
+        <!-- <div class="authContainer signup">
+            <div class="authHead">SIGN UP</div>
+            <input type="text" class="name" placeholder="Name">
+            <input type="text" class="email" placeholder="Email">
+            <input type="text" class="password" placeholder="Password">
+            <div class="loginContainer">
+                <button class="loginButton" onclick="register()">SIGN UP</button>
+                <a href="#" class="authLink">Have an Account? Log in instead</a>
+            </div>
+        </div> -->
+    </div>
+    <div class="about" id="about">
+        <div class="aboutImg">
+            <img src="./assets/img/Why-Your-Website-Needs-The-Same-Atmosphere-As-Your-Restaurant.jpg" alt="about"
+                class="aboutImg">
+        </div>
+        <div class="aboutContainer">
+            <div class="aboutHead">ABOUT</div>
+            <div class="aboutBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis
+                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint
+                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+        </div>
+    </div>
+    <div class="menu" id="menu">
+        <div class="menuHead">MENU</div>
+        <div class="menuBody">
+            <div class="menuItem">
+                <div class="priceTag">Rs. 250</div>
+                <img src="./assets/img/th-1537362162.jpg" alt="Finnish Soup image" class="menuImg">
+                <div class="menuItemText">Finnish Soup</div>
+            </div>
+            <div class="menuItem">
+                <div class="priceTag">Rs. 250</div>
+                <img src="./assets/img/th-1537362162.jpg" alt="Finnish Soup image" class="menuImg">
+                <div class="menuItemText">Finnish Soup</div>
+            </div>
+            <div class="menuItem">
+                <div class="priceTag">Rs. 250</div>
+                <img src="./assets/img/th-1537362162.jpg" alt="Finnish Soup image" class="menuImg">
+                <div class="menuItemText">Finnish Soup</div>
+            </div>
+            <div class="menuItem">
+                <div class="priceTag">Rs. 250</div>
+                <img src="./assets/img/th-1537362162.jpg" alt="Finnish Soup image" class="menuImg">
+                <div class="menuItemText">Finnish Soup</div>
+            </div>
+            <div class="menuItem">
+                <div class="priceTag">Rs. 250</div>
+                <img src="./assets/img/th-1537362162.jpg" alt="Finnish Soup image" class="menuImg">
+                <div class="menuItemText">Finnish Soup</div>hello
+            </div>
+            <div class="menuItem">
+                <div class="priceTag">Rs. 250</div>
+                <img src="./assets/img/th-1537362162.jpg" alt="Finnish Soup image" class="menuImg">
+                <div class="menuItemText">Finnish Soup</div>
+            </div>
+            <div class="menuItem">
+                <div class="priceTag">Rs. 250</div>
+                <img src="./assets/img/th-1537362162.jpg" alt="Finnish Soup image" class="menuImg">
+                <div class="menuItemText">Finnish Soup</div>
+            </div>
+            <div class="menuItem">
+                <div class="priceTag">Rs. 250</div>
+                <img src="./assets/img/th-1537362162.jpg" alt="Finnish Soup image" class="menuImg">
+                <div class="menuItemText">Finnish Soup</div>
+            </div>
+            <div class="menuItem">
+                <div class="priceTag">Rs. 250</div>
+                <img src="./assets/img/th-1537362162.jpg" alt="Finnish Soup image" class="menuImg">
+                <div class="menuItemText">Finnish Soup</div>
+            </div>
+        </div>
+    </div>
+    <div class="reservation" id="reservation">
+        <div class="screen">
+            <div class="reservationForm">
+                <div class="closeContainer">
+                    <div class="close" onclick="closeBooking()">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+                            <path fill-rule="evenodd"
+                                d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"
+                                clip-rule="evenodd" />
+                        </svg>
+                    </div>
+                </div>
+                <div class="dateContainer">
+                    <div class="dateLabel">Select Date</div>
+                    <input type="date" class="date">
+                </div>
+                <select name="" id="">
+                    <option value="">Select Time</option>
+                    <option value="">Breakfast</option>
+                    <option value="">Lunch</option>
+                    <option value="">Dinner</option>
+                </select>
+                <div class="tables">
+                    <div class="tableHead">Number of Tables</div>
+                    <div class="tableValue">
+                        <div class="min">1</div>
+                        <input type="range" name="" id="" min="1" max="3" value="1">
+                        <div class="max">3</div>
+                    </div>
+                </div>
+                <button onclick="book()">BOOK</button>
+            </div>
+        </div>
+        <div class="reservationHead">RESERVATION</div>
+        <div class="reservationBody">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis
+            aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint
+            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </div>
+        <div class="bookNow" onclick="startBooking()">Book Now</div>
+        <img src="./assets/img/image_2480.jpg" alt="" class="reservationImg">
+    </div>
+    <div class="footer" id="footer">
+        <div class="footerBody">
+            <div class="footerHead">OTHER PAGES</div>
+            <div>Terms & Conditions</div>
+            <div>Privacy Policy</div>
+            <div>Career</div>
+            <div>Contact us</div>
+        </div>
+        <div class="footerImg">
+            <img src="./assets/img/th-2230128278.jpg" alt="Logo">
+        </div>
+        <div class="footerBody">
+            <div>
+                <div class="footerHead">ADDRESS</div>
+                <div>Lorem ipsum address</div>
+            </div>
+            <div>
+                <div class="footerHead">CONTACT</div>
+                <div>Email@email.com</div>
+                <div>+91 00000 00000</div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/imgSlide.js"></script>
+    <script src="./assets/js/auth.js"></script>
+    <script src="./assets/js/reservation.js"></script>
+</body>
+
+</html>

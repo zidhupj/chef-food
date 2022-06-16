@@ -1,0 +1,443 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.home {
+    /* position: absolute; */
+    height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+
+.headerImage {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: -1;
+    /* background: url(./assets/img/Food-HD-Wallpapers-04864.jpg) no-repeat; */
+    display: grid;
+    grid-template-columns: 100% 100% 100%;
+    transition: all 1s ease;
+}
+
+.greetings {
+    color: #fff;
+    font-size: 80px;
+    font-weight: 800;
+    text-shadow: 0 0 50px #000;
+}
+
+.leftArrow {
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    left: 10px;
+    z-index: 1;
+    width: 75px;
+    color: #d9d9d9;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.rightArrow {
+    position: absolute;
+    top: auto;
+    bottom: auto;
+    right: 10px;
+    z-index: 1;
+    width: 75px;
+    color: #d9d9d9;
+    background-size: cover;
+    cursor: pointer;
+}
+
+.headerImage>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.logoContainer {
+    position: absolute;
+    width: 175px;
+    height: 175px;
+    border-radius: 50%;
+    left: 50%;
+    top: 0;
+    transform: translate(-45%, -10%);
+    background: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    /* position: absolute; */
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 75px;
+    display: flex;
+    background: #FFFFFF;
+}
+
+.navbar>ul {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+    list-style: none;
+}
+
+.navbar>ul>li>a {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #575757;
+}
+
+#login {
+    color: #800303
+}
+
+.authContainer {
+    /* z-index: 10; */
+    height: 40%;
+    width: 400px;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    transform: translate(0, 10%);
+    display: grid;
+    grid-template-rows: auto auto auto;
+    place-items: center;
+}
+
+.signup {
+    height: 50%;
+}
+
+input {
+    width: 80%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #a7a7a7;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #575757;
+}
+
+.loginContainer {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    width: 80%;
+    place-items: center;
+}
+
+.authHead {
+    font-size: 30px;
+    font-weight: 300;
+    color: #575757;
+}
+
+button {
+    width: 80%;
+    height: 40px;
+    transition: all 0.2s ease;
+    /* border-radius: 5px; */
+}
+
+button:hover {
+    background-color: #800303;
+    color: #FFFFFF;
+}
+
+.authLink {
+    width: 100%;
+    text-align: right;
+    color: #800303;
+    text-decoration: none;
+}
+
+.about {
+    height: 75vh;
+    background-color: #dedede;
+    display: flex;
+    overflow: hidden;
+}
+
+.aboutImg {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutImg>img {
+    height: 400px;
+    width: 650px;
+    object-fit: cover;
+}
+
+.aboutContainer {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    align-items: left;
+    justify-content: space-around;
+    padding-block: 100px;
+    transform: translateX(10%);
+    gap: 3rem;
+}
+
+.aboutHead {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    color: #575757;
+    width: 75%;
+}
+
+.aboutBody {
+    font-style: normal;
+    font-weight: 200;
+    font-size: 25px;
+    color: black;
+    width: 75%;
+    text-align: justify;
+}
+
+.aboutFooter {
+    font-style: normal;
+    font-weight: 100;
+    font-size: 30px;
+    color: #4A1414;
+    width: 75%;
+    text-align: justify;
+}
+
+.menu {
+    height: 175vh;
+    background: linear-gradient(to bottom, white 50%, #2f2f2f 50%, #2f2f2f);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1.5rem;
+}
+
+.menuHead {
+    color: #777777;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 50px;
+    flex: 1;
+    display: grid;
+    place-items: center;
+}
+
+.menuBody {
+    flex: 5;
+    width: 90%;
+    margin-bottom: 75px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 6rem;
+    column-gap: 5rem;
+}
+
+.menuItem {
+    background-color: #8a8a8a;
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: 83% 17%;
+    overflow: hidden;
+    position: relative;
+}
+
+.menuImg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menuItemText {
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: 300;
+    display: grid;
+    place-items: center;
+}
+
+.priceTag {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #e5e5e5;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-weight: 600;
+    font-size: 17px;
+}
+
+.reservation {
+    height: 150vh;
+    background: linear-gradient(to bottom, #c9c9c9 70%, white 70%, white);
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+    place-items: center;
+    gap: 5rem;
+    padding: 4rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.screen {
+    display: none;
+    height: 150vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    place-items: center;
+}
+
+.reservationForm {
+    background-color: #FFFFFF;
+    height: 40%;
+    width: 500px;
+    border-radius: 30px;
+    display: grid;
+    grid-template-rows: auto auto auto auto auto;
+    place-items: center;
+    padding: 1rem;
+}
+
+.closeContainer {
+    width: 100%;
+    display: grid;
+    place-items: end;
+}
+
+.close {
+    height: 30px;
+    width: 30px;
+    color: black;
+    display: flex;
+    cursor: pointer;
+}
+
+.dateContainer {
+    display: grid;
+    width: 90%;
+    place-items: center;
+    grid-template-columns: 20% 80%;
+    gap: 1rem;
+}
+
+select {
+    width: 90%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #a7a7a7;
+    padding: 0 10px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #575757;
+}
+
+.tables {
+    display: grid;
+    width: 90%;
+    place-items: center;
+    grid-template-columns: 30% 70%;
+    gap: 1rem;
+}
+
+.tableValue {
+    display: grid;
+    width: 100%;
+    place-items: center;
+    grid-template-columns: 5% 90% 5%;
+}
+
+.reservationHead {
+    font-weight: 300;
+    font-size: 50px;
+}
+
+.reservationBody {
+    font-weight: 200;
+    font-size: 25px;
+    text-align: justify;
+    padding-inline: 100px;
+}
+
+.bookNow {
+    font-weight: 500;
+    font-size: 25px;
+    color: #800303;
+    cursor: pointer;
+}
+
+.footer {
+    height: 50vh;
+    background: #373737;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    place-items: center;
+    color: white;
+    padding-inline: 125px;
+    font-weight: 100;
+    font-size: 20px;
+}
+
+.footerImg {
+    height: 300px;
+    width: 300px;
+    overflow: hidden;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    display: grid;
+    place-items: center;
+}
+
+.footerImg>img {
+    height: 90%;
+    width: 90%;
+    object-fit: cover;
+    transform: translateY(-3%);
+}
+
+.footerBody {
+    display: grid;
+    gap: 2rem;
+}
+
+.footerBody>div {
+    display: grid;
+    gap: 1rem;
+}
+
+.footerHead {
+    font-weight: 300;
+    font-size: 25px;
+}
